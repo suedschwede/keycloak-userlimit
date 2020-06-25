@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>at.mic</groupId>
+    <artifactId>authenticator-spi-sessionlimit</artifactId>
+    <version>1.0</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <version.org.keycloak>9.0.3</version.org.keycloak>
+        <version.org.jboss.logging>3.3.0.Final</version.org.jboss.logging>
+    </properties>
+
+ 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-server-spi</artifactId>
+            <version>${version.org.keycloak}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-server-spi-private</artifactId>
+            <version>${version.org.keycloak}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-core</artifactId>
+            <version>${version.org.keycloak}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>${version.org.jboss.logging}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+    <groupId>org.keycloak</groupId>
+    <artifactId>keycloak-saml-core</artifactId>
+    <version>${version.org.keycloak}</version>
+</dependency>
+<dependency>
+    <groupId>org.keycloak</groupId>
+    <artifactId>keycloak-services</artifactId>
+    <version>${version.org.keycloak}</version>
+</dependency>
+    </dependencies>
+
+
+</project>
